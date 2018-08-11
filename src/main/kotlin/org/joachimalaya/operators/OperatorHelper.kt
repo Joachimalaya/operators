@@ -22,4 +22,3 @@ fun <C> multiplyByAdding(add: (C, C) -> C, toMultiply: C, times: Int): C {
  * This function will throw an [IllegalArgumentException] if given a multiplier less than 1.
  */
 fun <C> multiplyByAdding(add: (C, C) -> C, times: Int, toMultiply: C) = multiplyByAdding(add, toMultiply,  times)
-
