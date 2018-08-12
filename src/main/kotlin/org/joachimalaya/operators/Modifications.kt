@@ -1,5 +1,10 @@
 package org.joachimalaya.operators
 
+/**
+ * 'Multiply' a list using the given addition function.
+ *
+ * This function will throw an [IllegalArgumentException] if given a multiplicand less than 0.
+ */
 private fun <K> multiplyListByAdding(toMultiply: List<K>, times: Int): List<K> {
     if (times < 0) {
         throw IllegalArgumentException("multiplying lists with values less than 0 is not defined")
