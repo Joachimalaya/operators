@@ -11,7 +11,7 @@ buildscript {
 }
 
 group "org.joachimalaya"
-version "0.1.0-SNAPSHOT"
+version "0.1.0"
 
 apply plugin: "kotlin"
 
@@ -20,7 +20,6 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
