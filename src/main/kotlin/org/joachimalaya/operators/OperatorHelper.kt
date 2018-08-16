@@ -10,7 +10,7 @@ fun <C> multiplyByAdding(add: (C, C) -> C, toMultiply: C, times: Int): C {
         throw IllegalArgumentException("multiplying objects of this type with values less than 1 is not defined")
     }
     var result = toMultiply
-    for (i in 1..times) {
+    for (i in 1 until times) {
         result = add(result, toMultiply)
     }
     return result

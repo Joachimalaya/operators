@@ -23,8 +23,8 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
-    testCompile "junit:junit:4.11"
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testCompile "io.kotlintest:kotlintest-runner-junit5:3.1.7"
 }
 
 compileKotlin {
@@ -36,4 +36,8 @@ compileTestKotlin {
 
 jar {
     from sourceSets.main.allSource
+}
+
+test {
+    useJUnitPlatform()
 }
